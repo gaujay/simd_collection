@@ -2,6 +2,7 @@
 
 
 A collection of highly optimized, SIMD-accelerated (SSE, AVX, FMA, NEON) functions written in C.
+
 Includes Google Benchmark and Google Test support (C++).
 
 ### Categories
@@ -21,7 +22,7 @@ Includes Google Benchmark and Google Test support (C++).
 	
 ### Benchmark results
 
-See corresponding sub-folders for graphs.
+See corresponding 'bench' sub-folders for graphs.
 
 ### Dependencies
 

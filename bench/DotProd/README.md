@@ -7,6 +7,9 @@ Benchmark configuration:
 - CPU: i7-10875h (L1-D 32K, L1-I 32K, L2 256K, L3 16M) (turbo mode disabled)
 - Options: no data alignement, max vector size multiple, inner loop '200'
 
+Notes:
+- For int16 x in16, naive SSE implementation becomes faster when data doesn't fit in L1-D cache.
+This is due to its 2x-unrolling becoming faster than the SSE version 4x-unrolling.
 
 ### SSE
 
