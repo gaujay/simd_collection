@@ -8,7 +8,8 @@ Benchmark configuration:
 - Options: no data alignement, max vector size multiple, inner loop '200'
 
 Notes:
-- For int16 x in16, naive SSE implementation becomes faster when data doesn't fit in L1-D cache.
+- Scalar implementations can be faster than explicit SSE, as compiler might use AVX in auto-vectorization
+- For int16 x int16, naive SSE implementation becomes faster when data doesn't fit in L1-D cache.
 This is due to its 2x-unrolling becoming faster than the SSE version 4x-unrolling.
 
 ### SSE
